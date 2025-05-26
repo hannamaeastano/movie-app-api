@@ -11,7 +11,11 @@ const movieRoutes = require("./routes/movie");
 // [SECTION] Environment Setup
 const app = express();
 const corsOptions = {
-    origin: ['http://localhost:3000'],
+    origin: [
+        'http://localhost:3000',
+        'https://movie-app-client-eta.vercel.app',
+        'https://movie-app-api-xk9z.onrender.com'
+    ],
     credentials: true,
     optionsSuccessStatus: 200
 };
